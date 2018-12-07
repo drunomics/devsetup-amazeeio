@@ -11,7 +11,7 @@ Docs: https://lagoon.readthedocs.io/en/latest/
 
         git clone https://github.com/drunomics/devsetup-amazeeio devsetup-tmp
         rm -rf devsetup-tmp/.git devsetup-tmp/README.md
-        cp -rfT devsetup-tmp devsetup-tmp .
+        cp -rfT devsetup-tmp .
             
         # Apply replacements and cleanup.
         php process-replacements.php
