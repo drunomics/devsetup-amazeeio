@@ -19,8 +19,7 @@ else {
 
 // Specify files for which replacement will be applied.
 $file_patterns = [
-  '.env',
-  '*.yml',
+  '.lagoon.yml',
 ];
 
 $replacements = [

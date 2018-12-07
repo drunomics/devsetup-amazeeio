@@ -5,22 +5,25 @@ Docs: https://lagoon.readthedocs.io/en/latest/
 
 ## Setup
 
-From your drupal-project root directory, run:
+  * Follow setup instructions from https://github.com/drunomics/devsetup-docker/tree/2.x
 
-    git clone https://github.com/drunomics/devsetup-amazeeio devsetup-tmp
-    rm -rf devsetup-tmp/.git devsetup-tmp/README.md
-    cp -rf devsetup-tmp/* .
-        
-    # Apply replacements and cleanup.
-    php process-replacements.php
-    rm -rf devsetup-tmp process-replacements.php
+  * From your drupal-project root directory, run:
 
-Then commit changes:
+        git clone https://github.com/drunomics/devsetup-amazeeio devsetup-tmp
+        rm -rf devsetup-tmp/.git devsetup-tmp/README.md
+        cp -rfT devsetup-tmp devsetup-tmp .
+            
+        # Apply replacements and cleanup.
+        php process-replacements.php
+        rm -rf devsetup-tmp process-replacements.php
 
-    git add .
-    git commit -am "Added amazeeio devsetup."
+  * Then commit changes:
     
-Follow lagoon docs for finishing the setup on amazeeio:
+        git add .
+        git commit -am "Added amazeeio lagoon support."
+        
+        
+  * Follow lagoon docs for finishing the setup on amazeeio:
 
   https://lagoon.readthedocs.io/en/latest/using_lagoon/setup_project/#2-provide-access-to-your-code
 
